@@ -1,0 +1,500 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6B133AE4283D9AFF0009A184 /* TVDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B133AE3283D9AFF0009A184 /* TVDevice.swift */; };
+		6B133AE6283D9CE60009A184 /* TVStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B133AE5283D9CE60009A184 /* TVStore.swift */; };
+		6B133AE8283D9E900009A184 /* ErrorWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B133AE7283D9E900009A184 /* ErrorWrapper.swift */; };
+		6B133AEA283D9EBB0009A184 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B133AE9283D9EBB0009A184 /* ErrorView.swift */; };
+		6B133AEC283DA0CA0009A184 /* TVDeviceCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B133AEB283DA0CA0009A184 /* TVDeviceCellView.swift */; };
+		6B133AF0283DA8470009A184 /* TVRemoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B133AEF283DA8470009A184 /* TVRemoteView.swift */; };
+		6B133AF2283DAAF10009A184 /* TVDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B133AF1283DAAF10009A184 /* TVDetailsView.swift */; };
+		6B133AF4283DC0460009A184 /* TVRemoteControlCenterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B133AF3283DC0460009A184 /* TVRemoteControlCenterView.swift */; };
+		6B133AF8283DC60C0009A184 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B133AF7283DC60C0009A184 /* Theme.swift */; };
+		6BA1EC21283B27FD00602943 /* sonytvremoteApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA1EC20283B27FD00602943 /* sonytvremoteApp.swift */; };
+		6BA1EC23283B27FD00602943 /* TVPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA1EC22283B27FD00602943 /* TVPickerView.swift */; };
+		6BA1EC25283B27FE00602943 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6BA1EC24283B27FE00602943 /* Assets.xcassets */; };
+		6BA1EC28283B27FE00602943 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6BA1EC27283B27FE00602943 /* Preview Assets.xcassets */; };
+		6BA27700283E8E2700006B1C /* RemoteControlButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA276FF283E8E2700006B1C /* RemoteControlButton.swift */; };
+		6BA27702283EAA1A00006B1C /* TVDeviceRemoteControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA27701283EAA1A00006B1C /* TVDeviceRemoteControl.swift */; };
+		6BA277222840090600006B1C /* NoTVAddedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA277212840090600006B1C /* NoTVAddedView.swift */; };
+		6BA277242840343D00006B1C /* TVRemoteControlBottomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA277232840343D00006B1C /* TVRemoteControlBottomView.swift */; };
+		6BA277282840614D00006B1C /* TVRemoteControlCenterViewArc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA277272840614D00006B1C /* TVRemoteControlCenterViewArc.swift */; };
+		6BA2772A28406E9900006B1C /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA2772928406E9900006B1C /* SettingsView.swift */; };
+		6BA2772C2840748800006B1C /* TVSettingsCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA2772B2840748800006B1C /* TVSettingsCellView.swift */; };
+		6BAA046C28415E4100BD0C6D /* TVRemoteControlExtendedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BAA046B28415E4100BD0C6D /* TVRemoteControlExtendedView.swift */; };
+		6BAA046E2841604100BD0C6D /* TVRemoteButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BAA046D2841604100BD0C6D /* TVRemoteButtonView.swift */; };
+		6BAA047028416CF300BD0C6D /* SheetHeight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BAA046F28416CF300BD0C6D /* SheetHeight.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		6B133AE3283D9AFF0009A184 /* TVDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVDevice.swift; sourceTree = "<group>"; };
+		6B133AE5283D9CE60009A184 /* TVStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVStore.swift; sourceTree = "<group>"; };
+		6B133AE7283D9E900009A184 /* ErrorWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorWrapper.swift; sourceTree = "<group>"; };
+		6B133AE9283D9EBB0009A184 /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
+		6B133AEB283DA0CA0009A184 /* TVDeviceCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVDeviceCellView.swift; sourceTree = "<group>"; };
+		6B133AEF283DA8470009A184 /* TVRemoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVRemoteView.swift; sourceTree = "<group>"; };
+		6B133AF1283DAAF10009A184 /* TVDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVDetailsView.swift; sourceTree = "<group>"; };
+		6B133AF3283DC0460009A184 /* TVRemoteControlCenterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVRemoteControlCenterView.swift; sourceTree = "<group>"; };
+		6B133AF7283DC60C0009A184 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		6BA1EC1D283B27FD00602943 /* TV Remote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TV Remote.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6BA1EC20283B27FD00602943 /* sonytvremoteApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sonytvremoteApp.swift; sourceTree = "<group>"; };
+		6BA1EC22283B27FD00602943 /* TVPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVPickerView.swift; sourceTree = "<group>"; };
+		6BA1EC24283B27FE00602943 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6BA1EC27283B27FE00602943 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		6BA276FF283E8E2700006B1C /* RemoteControlButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteControlButton.swift; sourceTree = "<group>"; };
+		6BA27701283EAA1A00006B1C /* TVDeviceRemoteControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVDeviceRemoteControl.swift; sourceTree = "<group>"; };
+		6BA277212840090600006B1C /* NoTVAddedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoTVAddedView.swift; sourceTree = "<group>"; };
+		6BA277232840343D00006B1C /* TVRemoteControlBottomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVRemoteControlBottomView.swift; sourceTree = "<group>"; };
+		6BA277272840614D00006B1C /* TVRemoteControlCenterViewArc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVRemoteControlCenterViewArc.swift; sourceTree = "<group>"; };
+		6BA2772928406E9900006B1C /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		6BA2772B2840748800006B1C /* TVSettingsCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVSettingsCellView.swift; sourceTree = "<group>"; };
+		6BAA046A284154A300BD0C6D /* TV Remote-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TV Remote-Info.plist"; sourceTree = "<group>"; };
+		6BAA046B28415E4100BD0C6D /* TVRemoteControlExtendedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVRemoteControlExtendedView.swift; sourceTree = "<group>"; };
+		6BAA046D2841604100BD0C6D /* TVRemoteButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVRemoteButtonView.swift; sourceTree = "<group>"; };
+		6BAA046F28416CF300BD0C6D /* SheetHeight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetHeight.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6BA1EC1A283B27FD00602943 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6B133AE2283D9A6E0009A184 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6B133AE3283D9AFF0009A184 /* TVDevice.swift */,
+				6B133AE5283D9CE60009A184 /* TVStore.swift */,
+				6B133AE7283D9E900009A184 /* ErrorWrapper.swift */,
+				6B133AF7283DC60C0009A184 /* Theme.swift */,
+				6BA276FF283E8E2700006B1C /* RemoteControlButton.swift */,
+				6BA27701283EAA1A00006B1C /* TVDeviceRemoteControl.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		6BA1EC14283B27FD00602943 = {
+			isa = PBXGroup;
+			children = (
+				6BAA046A284154A300BD0C6D /* TV Remote-Info.plist */,
+				6BA1EC1F283B27FD00602943 /* sonytvremote */,
+				6BA1EC1E283B27FD00602943 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6BA1EC1E283B27FD00602943 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6BA1EC1D283B27FD00602943 /* TV Remote.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6BA1EC1F283B27FD00602943 /* sonytvremote */ = {
+			isa = PBXGroup;
+			children = (
+				6BAA04712850FE5300BD0C6D /* Views */,
+				6BA1EC24283B27FE00602943 /* Assets.xcassets */,
+				6BA1EC26283B27FE00602943 /* Preview Content */,
+				6B133AE2283D9A6E0009A184 /* Models */,
+				6BA1EC20283B27FD00602943 /* sonytvremoteApp.swift */,
+			);
+			path = sonytvremote;
+			sourceTree = "<group>";
+		};
+		6BA1EC26283B27FE00602943 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				6BA1EC27283B27FE00602943 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		6BAA04712850FE5300BD0C6D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6BAA04772850FF4200BD0C6D /* Common */,
+				6BAA04762850FEFF00BD0C6D /* Error */,
+				6BAA04752850FEE600BD0C6D /* Settings */,
+				6BAA04742850FEC500BD0C6D /* TVRemoteControl */,
+				6BAA04732850FE8F00BD0C6D /* TVDetails */,
+				6BAA04722850FE7400BD0C6D /* TVSelection */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		6BAA04722850FE7400BD0C6D /* TVSelection */ = {
+			isa = PBXGroup;
+			children = (
+				6BA1EC22283B27FD00602943 /* TVPickerView.swift */,
+				6B133AEB283DA0CA0009A184 /* TVDeviceCellView.swift */,
+				6BA277212840090600006B1C /* NoTVAddedView.swift */,
+			);
+			path = TVSelection;
+			sourceTree = "<group>";
+		};
+		6BAA04732850FE8F00BD0C6D /* TVDetails */ = {
+			isa = PBXGroup;
+			children = (
+				6B133AF1283DAAF10009A184 /* TVDetailsView.swift */,
+			);
+			path = TVDetails;
+			sourceTree = "<group>";
+		};
+		6BAA04742850FEC500BD0C6D /* TVRemoteControl */ = {
+			isa = PBXGroup;
+			children = (
+				6BAA04782850FF5500BD0C6D /* Subunits */,
+				6BAA046B28415E4100BD0C6D /* TVRemoteControlExtendedView.swift */,
+				6B133AEF283DA8470009A184 /* TVRemoteView.swift */,
+			);
+			path = TVRemoteControl;
+			sourceTree = "<group>";
+		};
+		6BAA04752850FEE600BD0C6D /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				6BA2772928406E9900006B1C /* SettingsView.swift */,
+				6BA2772B2840748800006B1C /* TVSettingsCellView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		6BAA04762850FEFF00BD0C6D /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				6B133AE9283D9EBB0009A184 /* ErrorView.swift */,
+			);
+			path = Error;
+			sourceTree = "<group>";
+		};
+		6BAA04772850FF4200BD0C6D /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				6BAA046F28416CF300BD0C6D /* SheetHeight.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		6BAA04782850FF5500BD0C6D /* Subunits */ = {
+			isa = PBXGroup;
+			children = (
+				6BAA046D2841604100BD0C6D /* TVRemoteButtonView.swift */,
+				6B133AF3283DC0460009A184 /* TVRemoteControlCenterView.swift */,
+				6BA277232840343D00006B1C /* TVRemoteControlBottomView.swift */,
+				6BA277272840614D00006B1C /* TVRemoteControlCenterViewArc.swift */,
+			);
+			path = Subunits;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6BA1EC1C283B27FD00602943 /* TV Remote */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6BA1EC2B283B27FE00602943 /* Build configuration list for PBXNativeTarget "TV Remote" */;
+			buildPhases = (
+				6BA1EC19283B27FD00602943 /* Sources */,
+				6BA1EC1A283B27FD00602943 /* Frameworks */,
+				6BA1EC1B283B27FD00602943 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "TV Remote";
+			productName = sonytvremote;
+			productReference = 6BA1EC1D283B27FD00602943 /* TV Remote.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6BA1EC15283B27FD00602943 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					6BA1EC1C283B27FD00602943 = {
+						CreatedOnToolsVersion = 13.4;
+					};
+				};
+			};
+			buildConfigurationList = 6BA1EC18283B27FD00602943 /* Build configuration list for PBXProject "TV Remote" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6BA1EC14283B27FD00602943;
+			productRefGroup = 6BA1EC1E283B27FD00602943 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6BA1EC1C283B27FD00602943 /* TV Remote */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6BA1EC1B283B27FD00602943 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6BA1EC28283B27FE00602943 /* Preview Assets.xcassets in Resources */,
+				6BA1EC25283B27FE00602943 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6BA1EC19283B27FD00602943 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6BA277282840614D00006B1C /* TVRemoteControlCenterViewArc.swift in Sources */,
+				6BA27702283EAA1A00006B1C /* TVDeviceRemoteControl.swift in Sources */,
+				6B133AE4283D9AFF0009A184 /* TVDevice.swift in Sources */,
+				6BA2772C2840748800006B1C /* TVSettingsCellView.swift in Sources */,
+				6BA277222840090600006B1C /* NoTVAddedView.swift in Sources */,
+				6B133AEA283D9EBB0009A184 /* ErrorView.swift in Sources */,
+				6BA2772A28406E9900006B1C /* SettingsView.swift in Sources */,
+				6BA1EC23283B27FD00602943 /* TVPickerView.swift in Sources */,
+				6BAA046E2841604100BD0C6D /* TVRemoteButtonView.swift in Sources */,
+				6BA1EC21283B27FD00602943 /* sonytvremoteApp.swift in Sources */,
+				6B133AE8283D9E900009A184 /* ErrorWrapper.swift in Sources */,
+				6B133AEC283DA0CA0009A184 /* TVDeviceCellView.swift in Sources */,
+				6B133AF4283DC0460009A184 /* TVRemoteControlCenterView.swift in Sources */,
+				6B133AF2283DAAF10009A184 /* TVDetailsView.swift in Sources */,
+				6B133AF0283DA8470009A184 /* TVRemoteView.swift in Sources */,
+				6B133AF8283DC60C0009A184 /* Theme.swift in Sources */,
+				6B133AE6283D9CE60009A184 /* TVStore.swift in Sources */,
+				6BAA046C28415E4100BD0C6D /* TVRemoteControlExtendedView.swift in Sources */,
+				6BA27700283E8E2700006B1C /* RemoteControlButton.swift in Sources */,
+				6BA277242840343D00006B1C /* TVRemoteControlBottomView.swift in Sources */,
+				6BAA047028416CF300BD0C6D /* SheetHeight.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		6BA1EC29283B27FE00602943 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6BA1EC2A283B27FE00602943 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6BA1EC2C283B27FE00602943 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"sonytvremote/Preview Content\"";
+				DEVELOPMENT_TEAM = 9T3UNR298V;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "TV Remote-Info.plist";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = mrudik.sonytvremote;
+				PRODUCT_NAME = "TV Remote";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6BA1EC2D283B27FE00602943 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"sonytvremote/Preview Content\"";
+				DEVELOPMENT_TEAM = 9T3UNR298V;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "TV Remote-Info.plist";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = mrudik.sonytvremote;
+				PRODUCT_NAME = "TV Remote";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6BA1EC18283B27FD00602943 /* Build configuration list for PBXProject "TV Remote" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6BA1EC29283B27FE00602943 /* Debug */,
+				6BA1EC2A283B27FE00602943 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6BA1EC2B283B27FE00602943 /* Build configuration list for PBXNativeTarget "TV Remote" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6BA1EC2C283B27FE00602943 /* Debug */,
+				6BA1EC2D283B27FE00602943 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6BA1EC15283B27FD00602943 /* Project object */;
+}
