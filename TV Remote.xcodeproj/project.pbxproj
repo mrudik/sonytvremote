@@ -30,6 +30,7 @@
 		6BAA046C28415E4100BD0C6D /* TVRemoteControlExtendedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BAA046B28415E4100BD0C6D /* TVRemoteControlExtendedView.swift */; };
 		6BAA046E2841604100BD0C6D /* TVRemoteButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BAA046D2841604100BD0C6D /* TVRemoteButtonView.swift */; };
 		6BAA047028416CF300BD0C6D /* SheetHeight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BAA046F28416CF300BD0C6D /* SheetHeight.swift */; };
+		6BAA047A285945C900BD0C6D /* TVButtonDimension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BAA0479285945C900BD0C6D /* TVButtonDimension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +59,7 @@
 		6BAA046B28415E4100BD0C6D /* TVRemoteControlExtendedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVRemoteControlExtendedView.swift; sourceTree = "<group>"; };
 		6BAA046D2841604100BD0C6D /* TVRemoteButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVRemoteButtonView.swift; sourceTree = "<group>"; };
 		6BAA046F28416CF300BD0C6D /* SheetHeight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetHeight.swift; sourceTree = "<group>"; };
+		6BAA0479285945C900BD0C6D /* TVButtonDimension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVButtonDimension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 				6B133AF7283DC60C0009A184 /* Theme.swift */,
 				6BA276FF283E8E2700006B1C /* RemoteControlButton.swift */,
 				6BA27701283EAA1A00006B1C /* TVDeviceRemoteControl.swift */,
+				6BAA0479285945C900BD0C6D /* TVButtonDimension.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -268,6 +271,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6BAA047A285945C900BD0C6D /* TVButtonDimension.swift in Sources */,
 				6BA277282840614D00006B1C /* TVRemoteControlCenterViewArc.swift in Sources */,
 				6BA27702283EAA1A00006B1C /* TVDeviceRemoteControl.swift in Sources */,
 				6B133AE4283D9AFF0009A184 /* TVDevice.swift in Sources */,

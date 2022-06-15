@@ -17,6 +17,7 @@ struct TVRemoteView: View {
     @State private var isPresentingExtendedControlsView = false
     
     @State private var activeBtnTest = ""
+    @State private var dimension = TVButtonDimension()
     
     var body: some View {
         VStack {
@@ -24,7 +25,11 @@ struct TVRemoteView: View {
                 Button(action: {remote.click(button: .actionPower)}) {
                     Circle()
                         .foregroundColor(Theme.remoteButtonSecondaryColor)
-                        .frame(width: 80, height: 80, alignment: .center)
+                        .frame(
+                            width: dimension.powerOffDiameter,
+                            height: dimension.powerOffDiameter,
+                            alignment: .center
+                        )
                         .shadow(radius: 5, x: 0, y: 5)
                         .overlay {
                             Image(systemName: "power")
@@ -37,7 +42,7 @@ struct TVRemoteView: View {
             
             Spacer()
             
-            TVRemoteControlCenterView() { buttonClicked in
+            TVRemoteControlCenterView(dimension: dimension) { buttonClicked in
                 remote.click(button: buttonClicked)
             }
             
@@ -47,7 +52,7 @@ struct TVRemoteView: View {
                 isPresentingExtendedControlsView = true
             }
             
-            TVRemoteControlBottomView() { buttonClicked in
+            TVRemoteControlBottomView(dimension: dimension) { buttonClicked in
                 remote.click(button: buttonClicked)
             }
             .padding()

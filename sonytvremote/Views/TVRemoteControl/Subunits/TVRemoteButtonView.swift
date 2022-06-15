@@ -15,19 +15,26 @@ struct TVRemoteButtonView: View {
     
     var body: some View {
         Button(action: {clickAction(buttonType)}) {
-            Rectangle()
-                .frame(width: 120, height: 60, alignment: .center)
-                .cornerRadius(10)
-                .foregroundColor(Theme.remoteButtonPrimaryColor)
-                .overlay {
-                    if buttonText != nil  {
-                        Text(buttonText!)
-                    } else if buttonImage != nil {
-                        Image(systemName: buttonImage!)
-                    }
+            HStack(spacing: 0) {
+                Spacer()
+                
+                if buttonText != nil  {
+                    Text(buttonText!)
+                        .font(.body)
+                        .lineLimit(1)
+                        .scaledToFill()
+                } else if buttonImage != nil {
+                    Image(systemName: buttonImage!)
+                        .font(.body)
                 }
+                
+                Spacer()
+            }
+            .frame(width: .infinity, height: UIScreen.main.bounds.height * 0.06)
+            .background(Theme.remoteButtonPrimaryColor)
+            .cornerRadius(10)
+            .foregroundColor(Theme.remoteButtonPrimaryTextColor)
         }
-        .foregroundColor(Theme.remoteButtonPrimaryTextColor)
     }
 }
 

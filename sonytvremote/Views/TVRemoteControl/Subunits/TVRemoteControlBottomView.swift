@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct TVRemoteControlBottomView: View {
+    let dimension: TVButtonDimension
+    
     var clickAction: ((_ buttonClicked: RemoteControlButton) -> ())
     
     var body: some View {
@@ -17,18 +19,21 @@ struct TVRemoteControlBottomView: View {
                 buttonType: .actionBack,
                 clickAction: clickAction
             )
+            .frame(minWidth: 0, maxWidth: .infinity)
             
             TVRemoteButtonView(
-                buttonText: "SCREEN",
+                buttonText: "PIC OFF",
                 buttonType: .actionPictureOff,
                 clickAction: clickAction
             )
+            .frame(minWidth: 0, maxWidth: .infinity)
             
             TVRemoteButtonView(
                 buttonImage: "house",
                 buttonType: .actionHome,
                 clickAction: clickAction
             )
+            .frame(minWidth: 0, maxWidth: .infinity)
         }
         .background(Theme.backgroundColor)
         .foregroundColor(Theme.remoteButtonPrimaryTextColor)
@@ -37,9 +42,11 @@ struct TVRemoteControlBottomView: View {
 
 struct TVRemoteControlBottomView_Previews: PreviewProvider {
     static var previews: some View {
-        TVRemoteControlBottomView(clickAction: { buttonClicked in
-            
-        })
+        TVRemoteControlBottomView(
+            dimension: TVButtonDimension(),
+            clickAction: { buttonClicked in
+            }
+        )
         .environment(\.colorScheme, .dark)
     }
 }
