@@ -31,6 +31,7 @@
 		6BAA046E2841604100BD0C6D /* TVRemoteButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BAA046D2841604100BD0C6D /* TVRemoteButtonView.swift */; };
 		6BAA047028416CF300BD0C6D /* SheetHeight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BAA046F28416CF300BD0C6D /* SheetHeight.swift */; };
 		6BAA047A285945C900BD0C6D /* TVButtonDimension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BAA0479285945C900BD0C6D /* TVButtonDimension.swift */; };
+		6BAA047C28595FF900BD0C6D /* TVRemoteControlArrowButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BAA047B28595FF900BD0C6D /* TVRemoteControlArrowButtonView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +61,7 @@
 		6BAA046D2841604100BD0C6D /* TVRemoteButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVRemoteButtonView.swift; sourceTree = "<group>"; };
 		6BAA046F28416CF300BD0C6D /* SheetHeight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetHeight.swift; sourceTree = "<group>"; };
 		6BAA0479285945C900BD0C6D /* TVButtonDimension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVButtonDimension.swift; sourceTree = "<group>"; };
+		6BAA047B28595FF900BD0C6D /* TVRemoteControlArrowButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVRemoteControlArrowButtonView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -197,6 +199,7 @@
 				6B133AF3283DC0460009A184 /* TVRemoteControlCenterView.swift */,
 				6BA277232840343D00006B1C /* TVRemoteControlBottomView.swift */,
 				6BA277272840614D00006B1C /* TVRemoteControlCenterViewArc.swift */,
+				6BAA047B28595FF900BD0C6D /* TVRemoteControlArrowButtonView.swift */,
 			);
 			path = Subunits;
 			sourceTree = "<group>";
@@ -277,6 +280,7 @@
 				6B133AE4283D9AFF0009A184 /* TVDevice.swift in Sources */,
 				6BA2772C2840748800006B1C /* TVSettingsCellView.swift in Sources */,
 				6BA277222840090600006B1C /* NoTVAddedView.swift in Sources */,
+				6BAA047C28595FF900BD0C6D /* TVRemoteControlArrowButtonView.swift in Sources */,
 				6B133AEA283D9EBB0009A184 /* ErrorView.swift in Sources */,
 				6BA2772A28406E9900006B1C /* SettingsView.swift in Sources */,
 				6BA1EC23283B27FD00602943 /* TVPickerView.swift in Sources */,

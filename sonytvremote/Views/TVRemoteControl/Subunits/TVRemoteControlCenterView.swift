@@ -16,87 +16,39 @@ struct TVRemoteControlCenterView: View {
         ZStack {
             VStack(spacing: dimension.spacing) {
                 HStack(spacing: dimension.spacing) {
-                    Rectangle()
-                        .frame(
-                            width: dimension.arcFrame,
-                            height: dimension.arcFrame,
-                            alignment: .topLeading
-                        )
-                        .foregroundColor(.clear)
-                        .overlay {
-                            // Up
-                            Button(action: {clickAction(RemoteControlButton.actionUp)}) {
-                                TVRemoteControlCenterViewArc(arcRadius: dimension.arcRadius)
-                                    .rotation(Angle(degrees: 180))
-                                    .stroke(
-                                        Theme.remoteButtonPrimaryColor,
-                                        lineWidth: dimension.arcLineWidth
-                                    )
-                            }
-                            Image(systemName: "arrow.up.left")
-                        }
+                    // Up
+                    TVRemoteControlArrowButtonView(
+                        dimension: dimension,
+                        rotationAngle: 180,
+                        systemImage: "arrow.up.left",
+                        clickAction: {clickAction(RemoteControlButton.actionUp)}
+                    )
                     
-                    Rectangle()
-                        .frame(
-                            width: dimension.arcFrame,
-                            height: dimension.arcFrame,
-                            alignment: .topLeading
-                        )
-                        .foregroundColor(.clear)
-                        .overlay {
-                            // Right
-                            Button(action: {clickAction(RemoteControlButton.actionRight)}) {
-                                TVRemoteControlCenterViewArc(arcRadius: dimension.arcRadius)
-                                    .rotation(Angle(degrees: 270))
-                                    .stroke(
-                                        Theme.remoteButtonPrimaryColor,
-                                        lineWidth: dimension.arcLineWidth
-                                    )
-                            }
-                            Image(systemName: "arrow.up.right")
-                        }
+                    // Right
+                    TVRemoteControlArrowButtonView(
+                        dimension: dimension,
+                        rotationAngle: 270,
+                        systemImage: "arrow.up.right",
+                        clickAction: {clickAction(RemoteControlButton.actionRight)}
+                    )
                 }
                 
                 HStack(spacing: dimension.spacing) {
-                    Rectangle()
-                        .frame(
-                            width: dimension.arcFrame,
-                            height: dimension.arcFrame,
-                            alignment: .topLeading
-                        )
-                        .foregroundColor(.clear)
-                        .overlay {
-                            // Left
-                            Button(action: {clickAction(RemoteControlButton.actionLeft)}) {
-                                TVRemoteControlCenterViewArc(arcRadius: dimension.arcRadius)
-                                    .rotation(Angle(degrees: 90))
-                                    .stroke(
-                                        Theme.remoteButtonPrimaryColor,
-                                        lineWidth: dimension.arcLineWidth
-                                    )
-                            }
-                            Image(systemName: "arrow.down.left")
-                        }
+                    // Left
+                    TVRemoteControlArrowButtonView(
+                        dimension: dimension,
+                        rotationAngle: 90,
+                        systemImage: "arrow.down.left",
+                        clickAction: {clickAction(RemoteControlButton.actionLeft)}
+                    )
                     
-                    Rectangle()
-                        .frame(
-                            width: dimension.arcFrame,
-                            height: dimension.arcFrame,
-                            alignment: .topLeading
-                        )
-                        .foregroundColor(.clear)
-                        .overlay {
-                            // Down
-                            Button(action: {clickAction(RemoteControlButton.actionDown)}) {
-                                TVRemoteControlCenterViewArc(arcRadius: dimension.arcRadius)
-                                    .rotation(Angle(degrees: 0))
-                                    .stroke(
-                                        Theme.remoteButtonPrimaryColor,
-                                        lineWidth: dimension.arcLineWidth
-                                    )
-                            }
-                            Image(systemName: "arrow.down.right")
-                        }
+                    // Down
+                    TVRemoteControlArrowButtonView(
+                        dimension: dimension,
+                        rotationAngle: 0,
+                        systemImage: "arrow.down.right",
+                        clickAction: {clickAction(RemoteControlButton.actionDown)}
+                    )
                 }
             }
             .foregroundColor(Theme.remoteButtonPrimaryTextColor)
