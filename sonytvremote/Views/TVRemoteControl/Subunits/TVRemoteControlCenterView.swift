@@ -60,26 +60,10 @@ struct TVRemoteControlCenterView: View {
             .rotationEffect(.degrees(45))
             
             // Center
-            Button(action: {clickAction(RemoteControlButton.actionConfirm)}) {
-                Circle()
-                    .frame(
-                        width: dimension.innerCircleDiameter,
-                        height: dimension.innerCircleDiameter,
-                        alignment: .center
-                    )
-                    .foregroundColor(Theme.remoteButtonSecondaryColor)
-            }
-            
-            // Shadow effect only
-            Circle()
-                .frame(
-                    width: dimension.innerCircleShadowDiameter,
-                    height: dimension.innerCircleShadowDiameter,
-                    alignment: .center
-                )
-                .foregroundColor(Theme.remoteButtonSecondaryColor)
-                .allowsHitTesting(false)
-                .shadow(radius: 10)
+            TVRemoteControlCenterButtonView(
+                dimension: dimension,
+                clickAction: {clickAction(RemoteControlButton.actionConfirm)}
+            )
         }
         .background(Theme.backgroundColor)
     }
