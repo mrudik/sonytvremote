@@ -23,18 +23,21 @@ struct TVRemoteControlExtendedView: View {
                         buttonType: .actionInput,
                         clickAction: clickAction
                     )
+                    .frame(minWidth: 0, maxWidth: .infinity)
                     
                     TVRemoteButtonView(
                         buttonText: "PREV",
                         buttonType: .actionPrev,
                         clickAction: clickAction
                     )
+                    .frame(minWidth: 0, maxWidth: .infinity)
                     
                     TVRemoteButtonView(
                         buttonText: "NEXT",
                         buttonType: .actionNext,
                         clickAction: clickAction
                     )
+                    .frame(minWidth: 0, maxWidth: .infinity)
                 }
                 .frame(maxWidth: .infinity, alignment: .center)
                 .padding(.top)
@@ -45,18 +48,21 @@ struct TVRemoteControlExtendedView: View {
                         buttonType: .actionSubTitle,
                         clickAction: clickAction
                     )
+                    .frame(minWidth: 0, maxWidth: .infinity)
                     
                     TVRemoteButtonView(
                         buttonImage: "pause",
                         buttonType: .actionPause,
                         clickAction: clickAction
                     )
+                    .frame(minWidth: 0, maxWidth: .infinity)
                     
                     TVRemoteButtonView(
                         buttonImage: "play",
                         buttonType: .actionPlay,
                         clickAction: clickAction
                     )
+                    .frame(minWidth: 0, maxWidth: .infinity)
                 }
                 .frame(maxWidth: .infinity, alignment: .center)
                 
@@ -71,18 +77,21 @@ struct TVRemoteControlExtendedView: View {
                         buttonType: .actionMute,
                         clickAction: clickAction
                     )
+                    .frame(minWidth: 0, maxWidth: .infinity)
                     
                     TVRemoteButtonView(
                         buttonImage: "speaker.wave.1",
                         buttonType: .actionVolumeDown,
                         clickAction: clickAction
                     )
+                    .frame(minWidth: 0, maxWidth: .infinity)
                     
                     TVRemoteButtonView(
                         buttonImage: "speaker.wave.3",
                         buttonType: .actionVolumeUp,
                         clickAction: clickAction
                     )
+                    .frame(minWidth: 0, maxWidth: .infinity)
                 }
                 .frame(maxWidth: .infinity, alignment: .center)
                 .padding([.top, .bottom])
