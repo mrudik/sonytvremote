@@ -16,6 +16,7 @@
 		6B133AF2283DAAF10009A184 /* TVDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B133AF1283DAAF10009A184 /* TVDetailsView.swift */; };
 		6B133AF4283DC0460009A184 /* TVRemoteControlCenterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B133AF3283DC0460009A184 /* TVRemoteControlCenterView.swift */; };
 		6B133AF8283DC60C0009A184 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B133AF7283DC60C0009A184 /* Theme.swift */; };
+		6B7496C02865470400F1471D /* SheeKit in Frameworks */ = {isa = PBXBuildFile; productRef = 6B7496BF2865470400F1471D /* SheeKit */; };
 		6BA1EC21283B27FD00602943 /* sonytvremoteApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA1EC20283B27FD00602943 /* sonytvremoteApp.swift */; };
 		6BA1EC23283B27FD00602943 /* TVPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA1EC22283B27FD00602943 /* TVPickerView.swift */; };
 		6BA1EC25283B27FE00602943 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6BA1EC24283B27FE00602943 /* Assets.xcassets */; };
@@ -71,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6B7496C02865470400F1471D /* SheeKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -223,6 +225,9 @@
 			dependencies = (
 			);
 			name = "TV Remote";
+			packageProductDependencies = (
+				6B7496BF2865470400F1471D /* SheeKit */,
+			);
 			productName = sonytvremote;
 			productReference = 6BA1EC1D283B27FD00602943 /* TV Remote.app */;
 			productType = "com.apple.product-type.application";
@@ -251,6 +256,9 @@
 				Base,
 			);
 			mainGroup = 6BA1EC14283B27FD00602943;
+			packageReferences = (
+				6B7496BE2865470400F1471D /* XCRemoteSwiftPackageReference "SheeKit" */,
+			);
 			productRefGroup = 6BA1EC1E283B27FD00602943 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -507,6 +515,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6B7496BE2865470400F1471D /* XCRemoteSwiftPackageReference "SheeKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/edudnyk/SheeKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6B7496BF2865470400F1471D /* SheeKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6B7496BE2865470400F1471D /* XCRemoteSwiftPackageReference "SheeKit" */;
+			productName = SheeKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 6BA1EC15283B27FD00602943 /* Project object */;
 }

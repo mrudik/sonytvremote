@@ -42,7 +42,7 @@ struct ErrorView: View {
             .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .bottom)
             .background(Theme.backgroundColor)
             //.foregroundColor(Theme.remoteButtonSecondaryColor)
-            .navigationTitle("Error")
+            .navigationTitle("Oops")
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {

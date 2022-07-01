@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import SheeKit
 
 struct TVRemoteView: View {
     @Binding var devices: [TVDevice]
@@ -15,9 +16,19 @@ struct TVRemoteView: View {
     @State private var data = TVDevice.Data()
     @State private var isPresentingTVDeviceEditView = false
     @State private var isPresentingExtendedControlsView = false
+    @State private var selectedDetentIdentifier = UISheetPresentationController.Detent.Identifier.medium
     
     @State private var activeBtnTest = ""
     @State private var dimension = TVButtonDimension()
+    
+    var presentedViewControllerParameters: UIViewControllerProxy {
+        var parameters = UIViewControllerProxy()
+        parameters.preferredStatusBarStyle = .darkContent
+        parameters.preferredStatusBarUpdateAnimation = .fade
+        parameters.isModalInPresentation = true
+        parameters.modalTransitionStyle = .flipHorizontal
+        return parameters
+    }
     
     var body: some View {
         VStack {
@@ -89,6 +100,28 @@ struct TVRemoteView: View {
                     }
             }
         }
+        .shee(
+            isPresented: $isPresentingExtendedControlsView,
+            presentationStyle: .formSheet(
+                properties:.init(
+                    detents: [.medium()],
+                    animatesSelectedDetentIdentifierChange: true
+                )
+            )
+        ) {
+            NavigationView {
+                TVRemoteControlExtendedView() { buttonClicked in
+                    remote.click(button: buttonClicked)
+                }
+                .navigationTitle(device.name)
+                .navigationBarTitleDisplayMode(.inline)
+            }
+        }
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .background(Color.red.edgesIgnoringSafeArea(.all))
+        
+        
+        /*
         .sheet(height: .points(600), isPresented: $isPresentingExtendedControlsView) {
             NavigationView {
                 TVRemoteControlExtendedView() { buttonClicked in
@@ -98,6 +131,7 @@ struct TVRemoteView: View {
                 .navigationBarTitleDisplayMode(.inline)
             }
         }
+         */
         .sheet(isPresented: $remote.isErrorOccured) {
             ErrorView(errorWrapper: remote.errorWrapper!)
         }

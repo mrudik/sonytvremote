@@ -53,7 +53,7 @@ class TVDeviceRemoteControl: NSObject, ObservableObject {
         
         var request = URLRequest(url: url!)
         request.httpMethod = "POST"
-        request.timeoutInterval = 10
+        request.timeoutInterval = 5
         
         // Headers
         request.addValue("text/xml; charset=UTF-8", forHTTPHeaderField: "Content-Type")

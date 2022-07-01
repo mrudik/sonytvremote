@@ -9,11 +9,20 @@ import SwiftUI
 
 struct TVPickerView: View {
     @Binding var devices: [TVDevice]
-    @Environment(\.scenePhase) private var scenePhase
-    let saveDevicesAction: ()->Void
     
     @State private var isPresentingNewTVDeviceView = false
     @State private var newTVDeviceData = TVDevice.Data()
+    
+    func saveDevices() {
+        Task {
+            // Task creates a new async context.
+            do {
+                try await TVStore.save(devices: devices)
+            } catch {
+                // Nothing required
+            }
+        }
+    }
     
     var body: some View {
         VStack {
@@ -35,11 +44,6 @@ struct TVPickerView: View {
                     }
                 }
                 .background(Theme.backgroundColor)
-            }
-        }
-        .onChange(of: scenePhase) { phase in
-            if phase == .inactive {
-                saveDevicesAction()
             }
         }
         .navigationTitle("Select a TV")
@@ -68,6 +72,8 @@ struct TVPickerView: View {
                                 let newTVDevice = TVDevice(data: newTVDeviceData)
                                 devices.append(newTVDevice)
                                 
+                                saveDevices()
+                                
                                 isPresentingNewTVDeviceView = false
                                 newTVDeviceData = TVDevice.Data()
                             }
@@ -83,8 +89,7 @@ struct TVPickerView: View {
 struct TVPickerView_Previews: PreviewProvider {
     static var previews: some View {
         TVPickerView(
-            devices: .constant(TVDevice.sampleDeviceList),
-            saveDevicesAction: {}
+            devices: .constant(TVDevice.sampleDeviceList)
         )
         //.environment(\.colorScheme, .dark)
     }

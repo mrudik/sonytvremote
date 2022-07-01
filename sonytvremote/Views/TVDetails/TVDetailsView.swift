@@ -16,6 +16,17 @@ struct TVDetailsView: View {
     
     @State private var isEditMode = false
     
+    func saveDevices() {
+        Task {
+            // Task creates a new async context.
+            do {
+                try await TVStore.save(devices: devices)
+            } catch {
+                // Nothing required
+            }
+        }
+    }
+    
     var body: some View {
         VStack {
             Form {
@@ -85,6 +96,9 @@ struct TVDetailsView: View {
                 primaryButton: .destructive(Text("Remove")) {
                     isRemoveAlertDisplayed = false
                     devices.removeDeviceById(id: data.deviceId)
+                    
+                    saveDevices()
+                    
                     self.presentation.wrappedValue.dismiss()
                 },
                 secondaryButton: .default(Text("Cancel")) {

@@ -17,17 +17,7 @@ struct sonytvremoteApp: App {
     var body: some Scene {
         WindowGroup {
             NavigationView {
-                TVPickerView(devices: $store.devices) {
-                    // saveDevicesAction closure code here
-                    Task {
-                        // Task creates a new async context.
-                        do {
-                            try await TVStore.save(devices: store.devices)
-                        } catch {
-                            errorWrapper = ErrorWrapper(error: error, guidance: "Try again later.")
-                        }
-                    }
-                }
+                TVPickerView(devices: $store.devices)
             }
             .preferredColorScheme(isDarkMode ? .dark : .light)
             .onAppear {
@@ -39,13 +29,10 @@ struct sonytvremoteApp: App {
                 do {
                     store.devices = try await TVStore.load()
                 } catch {
-                    errorWrapper = ErrorWrapper(error: error, guidance: "Will load sample devices data and continue.")
+                    errorWrapper = ErrorWrapper(error: error, guidance: "Unable to load your stored TV's information.")
                 }
             }
-            .sheet(item: $errorWrapper, onDismiss: {
-                // Supply sample data, when error occured
-                store.devices = TVDevice.sampleDeviceList
-            }) { wrapper in
+            .sheet(item: $errorWrapper) { wrapper in
                 ErrorView(errorWrapper: wrapper)
             }
         }
